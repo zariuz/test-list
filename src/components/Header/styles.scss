@@ -1,0 +1,66 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  background-color: #f2994a;
+}
+
+.logo-title {
+  font-size: 48px;
+  font-weight: 900;
+  padding: 9px 20px 10px;
+  color: #f2f2f2;
+}
+
+.button {
+  display: inline-block;
+  background-color: #e0e0e0;
+  border-radius: 50px;
+  margin: 15px 20px 13px;
+  min-width: 50px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+
+  &--circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    padding: 0;
+    border-width: 2px;
+  }
+
+  &--outline {
+    background-color: #f2f2f2;
+    border-color: #f2994a;
+    &,
+    span {
+      color: #f2994a;
+    }
+
+    svg {
+      path {
+        fill: #828282;
+      }
+    }
+
+    &:hover {
+      background-color: #fff;
+
+      &,
+      span {
+        color: #f2f2f2;
+      }
+
+      svg {
+        path {
+          fill: #828282;
+        }
+      }
+    }
+  }
+}
